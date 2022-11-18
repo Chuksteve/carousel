@@ -22,9 +22,6 @@ body {
 .carousel:hover > .carousel-button
  {
     visibility: visible;
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, .09);
-    outline: 1px solid black;
 }
 
 .carousel > ul {
@@ -76,4 +73,11 @@ body {
 
 .carousel-button.next {
     right: 1rem;
+}
+
+.carousel-button:hover
+ {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, .09);
+    outline: 1px solid black;
 }
