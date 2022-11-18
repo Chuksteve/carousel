@@ -16,12 +16,12 @@ body {
 }
 
 .carousel > .carousel-button {
-    visibility: hidden;
+    display: none;
 }
 
 .carousel:hover > .carousel-button
  {
-    visibility: visible;
+    display: block;
 }
 
 .carousel > ul {
