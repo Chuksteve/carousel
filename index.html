@@ -9,29 +9,56 @@
     <title>Car Carousel</title>
   </head>
   <body>
-    <section aria-label="Photos">
-      <div class="carousel" data-carousel>
-        <button class="carousel-button prev" data-carousel-button="prev">
-          &#8678;
-        </button>
-        <button class="carousel-button next" data-carousel-button="next">
-          &#8680;
-        </button>
-        <ul data-slides>
-          <li class="slide" data-active>
-            <img src="./images/audi.jpg" alt="Audi" />
-          </li>
-          <li class="slide">
-            <img src="./images/ferrari.jpg" alt="Ferrari" />
-          </li>
-          <li class="slide"><img src="./images/benz.jpg" alt="Benz" /></li>
-          <li class="slide"><img src="./images/ford.jpg" alt="Ford" /></li>
-          <li class="slide"><img src="./images/range.jpeg" alt="Range" /></li>
-          <li class="slide">
-            <img src="./images/Lamborghini.jpg" alt="Lamborghini" />
-          </li>
-        </ul>
+    <div aria-label="Photos" class="carousel">
+      <div class="slide change">
+        <div class="slide-number">1 / 6</div>
+        <img src="./images/audi.jpg" alt="Audi" />
+        <div class="image-name">Audi</div>
       </div>
-    </section>
+
+      <div class="slide change">
+        <div class="slide-number">2 / 6</div>
+        <img src="./images/ferrari.jpg" alt="Ferrari" />
+        <div class="image-name">Ferrari</div>
+      </div>
+
+      <div class="slide change">
+        <div class="slide-number">3 / 6</div>
+        <img src="./images/benz.jpg" alt="Benz" />
+        <div class="image-name">Benz</div>
+        >
+      </div>
+
+      <div class="slide change">
+        <div class="slide-number">4 / 6</div>
+        <img src="./images/ford.jpg" alt="Ford" />
+        <div class="image-name">Ford</div>
+      </div>
+
+      <div class="slide change">
+        <div class="slide-number">5 / 6</div>
+        <img src="./images/range.jpeg" alt="Range" />
+        <div class="image-name">Range</div>
+      </div>
+
+      <div class="slide change">
+        <div class="slide-number">6 / 6</div>
+        <img src="./images/Lamborghini.jpg" alt="Lamborghini" />
+        <div class="image-name">Lamborghini</div>
+      </div>
+
+      <a class="carousel-button prev" onclick="plusSlides(-1)">&#8678;</a>
+      <a class="carousel-button next" onclick="plusSlides(1)">&#8680;</a>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
   </body>
 </html>
